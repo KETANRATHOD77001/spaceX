@@ -1,0 +1,154 @@
+  *{
+  box-sizing: border-box;
+}    
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+.side {
+  flex: 10%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+  
+.main {
+  flex: 70%;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+    
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #f1f1f1;
+}
+.left-a{
+  background-color: white;
+  border-radius: 4px;
+  width: 200px;
+  padding: 10px;
+}
+.left-b{
+  background-color: white;
+}
+.text-center{
+  text-align: center;
+  margin-bottom: -4px;
+}
+.fil-title{
+  margin-top: -10px;
+  margin-bottom: -20px;
+  font-weight: bold; 
+}
+.filter-title{
+  margin-bottom: 5px;
+  margin-right:15px;
+  margin-left:15px;
+  border-bottom:2px solid gray;
+}
+.btns{
+  background-color: white;
+}  
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box{
+  width: 22%;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.box img{
+  width: 100%;
+  padding: 20px;
+  background-color: #E6E6E6;
+}
+
+.filters h4 {
+  color: gray ;
+}
+
+.filters button {
+  background-color: rgb(54, 214, 70);
+  width: 40%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  margin: 5%;
+}
+
+.menu{
+  width: 20%;
+}
+
+.data-value{
+  font-weight: bold;
+}
+.data-ul{
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+.ms-name{
+  color: rgb(75, 75, 154);
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 1024px){
+.side {
+  flex: 20%;
+}
+.main {
+  flex: 60%;
+}
+.box{
+  width: 48%;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.box img{
+  width: 100%;
+}
+}
+@media screen and (max-width: 700px){
+.row, .navbar {   
+  flex-direction: column;
+}
+.side {
+  flex: 100%;
+}
+.left-a{
+  width: 96%;
+  margin: auto;
+}
+.main {
+  flex: 100%;
+}
+.box{
+  height: auto;
+  width: 96%;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.box img{
+  width: 100%;
+}
+.filters button {
+  font-size: large;
+  width: 30%;
+  margin:10px 10%;
+}
+.filters h4 {
+  font-size: larger;
+}
+}
